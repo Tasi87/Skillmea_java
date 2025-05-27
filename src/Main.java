@@ -33,7 +33,7 @@ public class Main {
         Scanner myCal = new Scanner(System.in);
         System.out.println("Zadaj prvé číslo:");
         num1 = myCal.nextFloat();
-        System.out.println("Zadaj druhé číslo:");
+        System.out.println("Zadaj druhé číslo: ");
         num2 = myCal.nextFloat();
         System.out.println(num1 + num2);
         System.out.println(num1 - num2);
