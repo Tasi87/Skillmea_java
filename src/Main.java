@@ -27,6 +27,7 @@ public class Main {
         String name = myScanner.nextLine();
         System.out.println(greeting + ", " + name + "!");
         */
+        /*
         // Kalkulačka
         float num1;
         float num2;
@@ -39,5 +40,12 @@ public class Main {
         System.out.println(num1 - num2);
         System.out.println(num1 * num2);
         System.out.println(num1 / num2);
+        */
+
+        Scanner mojScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoje slovo:");
+        String word = mojScanner.nextLine();
+        System.out.println(word.length());
+
     }
 }
