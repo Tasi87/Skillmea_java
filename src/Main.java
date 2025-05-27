@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class Main {
         // Toto je pre vypísanie textu
         System.out.println(pozdrav);
         */
-
+        /*
         int prveCislo = 10;
         int druheCislo = 5;
 
@@ -17,5 +19,25 @@ public class Main {
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo * druheCislo);
         System.out.println(prveCislo / druheCislo);
+        */
+        /*
+        String greeting = "Ahoj";
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoje meno:");
+        String name = myScanner.nextLine();
+        System.out.println(greeting + ", " + name + "!");
+        */
+        // Kalkulačka
+        int num1;
+        int num2;
+        Scanner myCal = new Scanner(System.in);
+        System.out.println("Zadaj prvé číslo:");
+        num1 = myCal.nextInt();
+        System.out.println("Zadaj druhé číslo:");
+        num2 = myCal.nextInt();
+        System.out.println(num1 + num2);
+        System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
+        System.out.println(num1 / num2);
     }
 }
