@@ -28,13 +28,13 @@ public class Main {
         System.out.println(greeting + ", " + name + "!");
         */
         // Kalkulačka
-        int num1;
-        int num2;
+        float num1;
+        float num2;
         Scanner myCal = new Scanner(System.in);
         System.out.println("Zadaj prvé číslo:");
-        num1 = myCal.nextInt();
+        num1 = myCal.nextFloat();
         System.out.println("Zadaj druhé číslo:");
-        num2 = myCal.nextInt();
+        num2 = myCal.nextFloat();
         System.out.println(num1 + num2);
         System.out.println(num1 - num2);
         System.out.println(num1 * num2);
