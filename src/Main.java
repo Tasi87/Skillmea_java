@@ -103,7 +103,7 @@ public class Main {
         }
         System.out.println(bmi);
        */
-
+        /*
         // nepárne číslo = vyhráva, párne číslo = prehráva
         int hodeneCislo;
         Random nahodnyGenerator = new Random();
@@ -119,6 +119,42 @@ public class Main {
         } else {
             System.out.println("Párne číslo - Prehra!");
         }
+        */
+
+        // Switch - den v týždni
+
+        Scanner myScanner = new Scanner(System.in);
+        int cisloDna;
+        System.out.println("Zadaj číslo dňa:");
+        cisloDna = myScanner.nextInt();
+
+        switch (cisloDna) {
+            case 1:
+                System.out.println("Je Pondelok");
+                break;
+            case 2:
+                System.out.println("Je Utorok");
+                break;
+            case 3:
+                System.out.println("Je Streda");
+                break;
+            case 4:
+                System.out.println("Je Štvrtok");
+                break;
+            case 5:
+                System.out.println("Je Piatok");
+                break;
+            case 6:
+                System.out.println("Je Sobota");
+                break;
+            case 7:
+                System.out.println("Je Nedeľa");
+                break;
+            default:
+                System.out.println("Neplatné číslo dňa!");
+        }
+
+
 
 
     }
