@@ -41,11 +41,37 @@ public class Main {
         System.out.println(num1 * num2);
         System.out.println(num1 / num2);
         */
-
+        /*
         Scanner mojScanner = new Scanner(System.in);
         System.out.println("Zadaj svoje slovo:");
         String word = mojScanner.nextLine();
         System.out.println(word.length());
+
+        int cisloPorovnania = 5;
+        System.out.println(cisloPorovnania > 0 && cisloPorovnania <= 8);
+        System.out.println(cisloPorovnania > 8 || cisloPorovnania < 0);
+        System.out.println(!(cisloPorovnania > 8 || cisloPorovnania < 0));
+        System.out.println(!true);
+        */
+
+        // Feature pre kontrolu veku, či bude mať užívateľ viac ako 18 rokov
+        int age;
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("Zadaj svoj vek:");
+        age = myScanner.nextInt();
+
+        if (age >= 18 && age < 65) {
+            System.out.println("Užívateľ je dospelý.");
+        } else if (age >= 65) {
+            System.out.println("Užívateľ je senior.");
+        } else if (age >=0 && age < 18) {
+            System.out.println("Užívateľ nie je neplnoletý.");
+        } else {
+            System.out.println("Nejde zadať záporný vek");
+        }
+
+
 
     }
 }
