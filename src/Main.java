@@ -104,10 +104,21 @@ public class Main {
         System.out.println(bmi);
        */
 
-        // párne číslo = vyhráva, nepárne číslo = prehráva
+        // nepárne číslo = vyhráva, párne číslo = prehráva
         int hodeneCislo;
         Random nahodnyGenerator = new Random();
+        System.out.println("Pre hodenie kockou stlač ENTER.");
+        Scanner myScanner = new Scanner(System.in);
+        myScanner.nextLine();
 
+        hodeneCislo = nahodnyGenerator.nextInt(1, 7);
+        System.out.println("Hodené číslo je: " + hodeneCislo);
+
+        if (hodeneCislo % 2 == 1) {
+            System.out.println("Nepárne číslo - Výhra!");
+        } else {
+            System.out.println("Párne číslo - Prehra!");
+        }
 
 
     }
