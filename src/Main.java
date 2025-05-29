@@ -155,8 +155,24 @@ public class Main {
         }
         */
 
+        // Pole
+
+        /*int[] znamky = new int[5];
+        znamky[0] = 3;
+        znamky[1] = 5;
+        znamky[2] = 1;
+        znamky[3] = 3;
+        znamky[4] = 1;
+
+        int[] znamky2 = new int[] {3, 5, 1, 3, 1};
+
+        System.out.println(znamky[2]);
+         */
 
 
+        String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
+        mena[0] = "Linda";
+        System.out.println(mena[0]);
 
     }
 }
