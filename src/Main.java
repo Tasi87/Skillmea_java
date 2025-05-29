@@ -76,8 +76,8 @@ public class Main {
         // Vypocet BMI (hmotnost/vyska)*2
 
         // Variables
-        float height;
-        float weight;
+        float vyska;
+        float vaha;
         float bmi;
 
         // Scanner
@@ -85,23 +85,22 @@ public class Main {
 
         // System Out
         System.out.println("Zadaj svoju výšku(m):");
-        height = myScanner.nextFloat();
+        vyska = myScanner.nextFloat();
         System.out.println("Zadaj svoju váhu(kg):");
-        weight = myScanner.nextFloat();
-        System.out.println((height / weight)*2);
+        vaha = myScanner.nextFloat();
 
         // Calculation
-        bmi = weight / (height * height);
+        bmi = vaha / (vyska * vyska);
 
         // Terms
         if (bmi < 18.5f) {
             System.out.println("Podváha");
-        } else if (bmi >= 18.5f && bmi > 25) {
+        } else if (bmi >= 18.5f && bmi < 25) {
             System.out.println("Optimálna váha");
-        } else {
+        } else if (bmi >= 25){
             System.out.println("Nadváha");
         }
-
+        System.out.println(bmi);
 
     }
 }
