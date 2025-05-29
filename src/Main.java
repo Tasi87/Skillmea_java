@@ -120,7 +120,7 @@ public class Main {
             System.out.println("Párne číslo - Prehra!");
         }
         */
-
+        /*
         // Switch - den v týždni
 
         Scanner myScanner = new Scanner(System.in);
@@ -153,6 +153,7 @@ public class Main {
             default:
                 System.out.println("Neplatné číslo dňa!");
         }
+        */
 
 
 
