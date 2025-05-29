@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -72,7 +73,7 @@ public class Main {
             System.out.println("Nejde zadať záporný vek");
         }
         */
-
+        /*
         // Vypocet BMI (hmotnost/vyska)*2
 
         // Variables
@@ -101,6 +102,13 @@ public class Main {
             System.out.println("Nadváha");
         }
         System.out.println(bmi);
+       */
+
+        // párne číslo = vyhráva, nepárne číslo = prehráva
+        int hodeneCislo;
+        Random nahodnyGenerator = new Random();
+
+
 
     }
 }
