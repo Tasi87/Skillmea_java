@@ -216,13 +216,13 @@ public class Main {
             // nepárne číslo = vyhráva, párne číslo = prehráva
             int hodeneCislo;
             Random nahodnyGenerator = new Random();
+            Scanner myScanner = new Scanner(System.in);
             boolean riadiacaPremenna = true;
             String ukoncenie;
 
 
             do {
                 System.out.println("Pre hodenie kockou stlač ENTER.");
-                Scanner myScanner = new Scanner(System.in);
                 myScanner.nextLine();
 
                 hodeneCislo = nahodnyGenerator.nextInt(1, 7);
