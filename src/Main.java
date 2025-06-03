@@ -188,10 +188,15 @@ public class Main {
 
         String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
 
+        // for
         for(int i = 0; i < mena.length; i++){
             System.out.println(mena[i]);
         }
 
+        // foreach
+        for(String meno: mena){
+            System.out.println(meno);
+        }
 
     }
 }
