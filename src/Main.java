@@ -184,7 +184,6 @@ public class Main {
             }
             System.out.println(i);
         }
-         */
 
         String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
 
@@ -197,6 +196,15 @@ public class Main {
         for(String meno: mena){
             System.out.println(meno);
         }
+        */
+
+        // while
+        int riadiacaPremenna = 0;
+        while(riadiacaPremenna < 5){
+            System.out.println(riadiacaPremenna);
+            riadiacaPremenna++;
+        }
+
 
     }
 }
