@@ -175,6 +175,7 @@ public class Main {
         */
 
         // Slučky
+        /*
         for(int i = 0; i < 10; i++) {
             //System.out.println(i * 5);
             if(i == 5) {
@@ -183,7 +184,13 @@ public class Main {
             }
             System.out.println(i);
         }
+         */
 
+        String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
+
+        for(int i = 0; i < mena.length; i++){
+            System.out.println(mena[i]);
+        }
 
 
     }
