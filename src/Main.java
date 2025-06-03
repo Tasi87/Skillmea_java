@@ -234,7 +234,7 @@ public class Main {
                     System.out.println("Párne číslo - Prehra!");
                 }
 
-                System.out.println("Pre ukončenie hry stlač q.");
+                System.out.println("Pre ukončenie hry stlač q a ENTER.");
                 ukoncenie = myScanner.nextLine();
                 if (ukoncenie.equals("q")) {
                     riadiacaPremenna = false;
