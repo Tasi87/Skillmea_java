@@ -238,6 +238,7 @@ public class Main {
                 ukoncenie = myScanner.nextLine();
                 if (ukoncenie.equals("q")) {
                     riadiacaPremenna = false;
+                    //break;
                 }
 
             } while (riadiacaPremenna);
