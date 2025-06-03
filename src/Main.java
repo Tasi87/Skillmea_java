@@ -196,7 +196,6 @@ public class Main {
         for(String meno: mena){
             System.out.println(meno);
         }
-        */
 
         // while
         int riadiacaPremenna = 0;
@@ -204,6 +203,13 @@ public class Main {
             System.out.println(riadiacaPremenna);
             riadiacaPremenna++;
         }
+        */
+        // do...while
+        int riadiacaPremenna2 = 0;
+        do {
+            System.out.println(riadiacaPremenna2);
+            riadiacaPremenna2++;
+        } while (riadiacaPremenna2 < 5);
 
 
     }
