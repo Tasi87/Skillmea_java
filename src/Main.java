@@ -203,14 +203,43 @@ public class Main {
             System.out.println(riadiacaPremenna);
             riadiacaPremenna++;
         }
-        */
+
         // do...while
         int riadiacaPremenna2 = 0;
         do {
             System.out.println(riadiacaPremenna2);
             riadiacaPremenna2++;
         } while (riadiacaPremenna2 < 5);
+        */
+
+        // Vylepsenie ulohy hod kockami
+            // nepárne číslo = vyhráva, párne číslo = prehráva
+            int hodeneCislo;
+            Random nahodnyGenerator = new Random();
+            boolean riadiacaPremenna = true;
+            String ukoncenie;
 
 
+            do {
+                System.out.println("Pre hodenie kockou stlač ENTER.");
+                Scanner myScanner = new Scanner(System.in);
+                myScanner.nextLine();
+
+                hodeneCislo = nahodnyGenerator.nextInt(1, 7);
+                System.out.println("Hodené číslo je: " + hodeneCislo);
+
+                if (hodeneCislo % 2 == 1) {
+                    System.out.println("Nepárne číslo - Výhra!");
+                } else {
+                    System.out.println("Párne číslo - Prehra!");
+                }
+
+                System.out.println("Pre ukončenie hry stlač q.");
+                ukoncenie = myScanner.nextLine();
+                if (ukoncenie.equals("q")) {
+                    riadiacaPremenna = false;
+                }
+
+            } while (riadiacaPremenna);
     }
 }
