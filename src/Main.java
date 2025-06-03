@@ -211,7 +211,7 @@ public class Main {
             riadiacaPremenna2++;
         } while (riadiacaPremenna2 < 5);
         */
-
+        /*
         // Vylepsenie ulohy hod kockami
             // nepárne číslo = vyhráva, párne číslo = prehráva
             int hodeneCislo;
@@ -242,5 +242,58 @@ public class Main {
                 }
 
             } while (riadiacaPremenna);
+          */
+
+        // BlackJack (21)
+        // Vairables
+        Scanner myScanner = new Scanner(System.in);
+        Random ranGen = new Random();
+        int scorePlayer = 0;
+        int scoreDealer = 0;
+        int card;
+        String userEnter;
+
+        // Main code
+        do {
+            // Player
+            card = ranGen.nextInt(1, 14);
+            System.out.println("Líznutá karta je: " + card);
+            scorePlayer = scorePlayer + card;
+            System.out.println("Skóre hráča je: " + scorePlayer);
+
+            if (scorePlayer > 21) {
+                System.out.println("Prehral si!");
+                break;
+            }
+
+            System.out.println("Pokiaľ chceš ďaľšiu karti stlač - d.");
+            System.out.println("Pokiaľ nechceš ďaľšiu karti stlač - q.");
+            userEnter = myScanner.nextLine();
+
+            if (userEnter.equals("d")){
+                continue;
+            } else if (userEnter.equals("q")) {
+                // Dealer
+                while (scoreDealer < scorePlayer) {
+                    scoreDealer += ranGen.nextInt(1, 14);
+                }
+                break;
+            }
+
+        } while (true);
+
+        System.out.println("Skóre hráča: " + scorePlayer);
+        System.out.println("Skóre krupiera: " + scoreDealer);
+
+        if ((scorePlayer > scoreDealer && scorePlayer <= 21) || scoreDealer > 21){
+            System.out.println("Vyhral si!");
+        } else if(scoreDealer == scorePlayer) {
+            System.out.println("Prehral si!");
+        } else {
+            System.out.println("Prehral si!");
+        }
+
+        System.out.println("Ďakujeme za hru.");
+
     }
 }
